@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Rental NFC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NFC Scan Prompt -->
+    <div id="nfcPrompt">
+        <h2>Scan NFC Tag to Unlock Bike</h2>
+        <button id="scanNfcButton">Tap to Scan NFC</button>
+        <p id="nfcStatus"></p>
+    </div>
+
+    <!-- Main App (Hidden Initially) -->
+    <div id="appContainer" class="hidden">
+        <h1>Bike Rental Service</h1>
+
+        <!-- Bike Image Display -->
+        <div class="image-container">
+            <img id="bikeImage" src="images/default-bike.jpg" alt="Bike Image">
+        </div>
+
+        <!-- Bike Details -->
+        <div id="bikeDetails">
+            <h2 id="bikeName"></h2>
+            <p><strong>Owner:</strong> <span id="ownerName"></span></p>
+            <p><strong>Contact:</strong> <span id="contactInfo"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
